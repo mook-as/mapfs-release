@@ -1,0 +1,5 @@
+---
+name: mapfs
+
+templates:
+  pre-start.erb: bin/pre-start
