@@ -1,0 +1,12 @@
+#!/bin/bash
+
+set -x -e
+
+version=`cat mapfs-version/number`
+pushd mapfs-release
+
+rm -rf .final_builds
+
+bosh -n create-release --tarball=dev_releases/mapfs/mapfs-$version.tgz --version $version --name mapfs --force
+mv dev_releases/mapfs/mapfs-$version.tgz ../created-plugins-release/mapfs-$version.tgz
+popd

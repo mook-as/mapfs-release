@@ -1,3 +1,4 @@
+#!/bin/bash
 set -xe
 
 mkdir -p ${BOSH_INSTALL_TARGET}/src
