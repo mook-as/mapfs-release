@@ -1,7 +1,8 @@
 ---
 name: mapfs
 
-dependencies: []
+dependencies:
+- golang-1.10-linux
 
 files: []
   - code.cloudfoundry.org/goshims/syscallshim/*.go # gosub
