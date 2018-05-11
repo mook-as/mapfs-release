@@ -1,0 +1,25 @@
+name: csi-plugins
+version: 1.0.0
+commit_hash: f7e98d5
+uncommitted_changes: false
+jobs:
+- name: mapfs
+  version: c543f6d0fc938d12a74baf4956a9123148be3e60
+  fingerprint: c543f6d0fc938d12a74baf4956a9123148be3e60
+  sha1: 7ed23917d23807bafe14c7eb8b54c39ad66e34fc
+packages:
+- name: golang-1.10-linux
+  version: 1baefde79e99ed3d1df72084315333032a294e59
+  fingerprint: 1baefde79e99ed3d1df72084315333032a294e59
+  sha1: 212148ae3c30da937bea9403c857069c4530c4e3
+  dependencies: []
+- name: mapfs
+  version: 03a60af000eacf593618d11368d8c61681c60bd6
+  fingerprint: 03a60af000eacf593618d11368d8c61681c60bd6
+  sha1: 6ca2fe71d4c3898da707504e515fa2b482f9dae4
+  dependencies:
+  - golang-1.10-linux
+license:
+  version: bb5a942c3571b827a6d80a973340ca00b138581c
+  fingerprint: bb5a942c3571b827a6d80a973340ca00b138581c
+  sha1: 732fbbcd52e24e472b4223b78ab3cacc1189ba61
