@@ -1,5 +1,5 @@
 ---
-final_name: csi-plugins
+final_name: mapfs
 blobstore:
   provider: s3
   options:

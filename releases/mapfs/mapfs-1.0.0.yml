@@ -1,4 +1,4 @@
-name: csi-plugins
+name: mapfs
 version: 1.0.0
 commit_hash: f7e98d5
 uncommitted_changes: false
