@@ -8,5 +8,11 @@ source /var/vcap/packages/golang-1.10-linux/bosh/compile.env
 export GOPATH=$BOSH_INSTALL_TARGET
 go install code.cloudfoundry.org/mapfs
 
+chown root:vcap ${BOSH_INSTALL_TARGET}/mapfs
+chmod 750 ${BOSH_INSTALL_TARGET}/mapfs
+chmod u+s ${BOSH_INSTALL_TARGET}/mapfs
+
 # clean up source artifacts
 rm -rf ${BOSH_INSTALL_TARGET}/src ${BOSH_INSTALL_TARGET}/pkg
+
+cp runtime.env ${BOSH_INSTALL_TARGET}/runtime.env

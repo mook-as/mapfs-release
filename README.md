@@ -6,7 +6,12 @@ gid/uid of file system operations at a given path.
 
 ## Usage
 
-Collocate mapfs job onto diego cell job via operations file
+Collocate mapfs job onto diego cell via operations file
 [add-mapfs.yml](operations/add-mapfs.yml). See [BOSH operations
-file](https://bosh.io/docs/cli-ops-files/). Once deployed mapfs executable will
-be available on VM at `/usr/bin/mapfs`.
+file](https://bosh.io/docs/cli-ops-files/).
+
+`mapfs` executable will be available at the path in job scripts:
+
+```
+source /var/vcap/packages/mapfs/runtime.env
+```

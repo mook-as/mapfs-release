@@ -1,8 +1,0 @@
-#!/bin/bash
-set -e -x
-
-cp /var/vcap/packages/mapfs/bin/mapfs /usr/bin/mapfs
-
-chown root:vcap /usr/bin/mapfs
-chmod 750 /usr/bin/mapfs
-chmod u+s /usr/bin/mapfs
