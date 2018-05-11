@@ -1,7 +1,7 @@
 ---
 name: mapfs
 
-templates: []
+templates: {}
 
 packages:
 - mapfs
