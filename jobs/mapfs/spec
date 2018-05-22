@@ -1,7 +1,8 @@
 ---
 name: mapfs
 
-templates: {}
+templates:
+  install.erb: bin/pre-start
 
 packages:
 - mapfs
