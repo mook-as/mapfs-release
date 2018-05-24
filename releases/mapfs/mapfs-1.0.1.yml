@@ -1,0 +1,25 @@
+name: mapfs
+version: 1.0.1
+commit_hash: 5ece0ed
+uncommitted_changes: false
+jobs:
+- name: mapfs
+  version: 414538ec1081d69d5ff7e9aa9afa38d7eb8325eb
+  fingerprint: 414538ec1081d69d5ff7e9aa9afa38d7eb8325eb
+  sha1: fac75510b081be17cdd073d42948a1fcda2ce091
+packages:
+- name: golang-1.10-linux
+  version: 1baefde79e99ed3d1df72084315333032a294e59
+  fingerprint: 1baefde79e99ed3d1df72084315333032a294e59
+  sha1: 212148ae3c30da937bea9403c857069c4530c4e3
+  dependencies: []
+- name: mapfs
+  version: 95910c2cb5342c9ab2b3ebf6e611b26431aff4e8
+  fingerprint: 95910c2cb5342c9ab2b3ebf6e611b26431aff4e8
+  sha1: f55c41011cd271d3c7b25822e994ebe9cb345fbf
+  dependencies:
+  - golang-1.10-linux
+license:
+  version: bb5a942c3571b827a6d80a973340ca00b138581c
+  fingerprint: bb5a942c3571b827a6d80a973340ca00b138581c
+  sha1: 732fbbcd52e24e472b4223b78ab3cacc1189ba61
