@@ -6,3 +6,4 @@ templates:
 
 packages:
 - mapfs
+- mapfs-fuse
