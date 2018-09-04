@@ -7,3 +7,14 @@ templates:
 packages:
 - mapfs
 - mapfs-fuse
+
+provides:
+- name: mapfs
+  type: mapfs
+  properties:
+  - path
+
+properties:
+  path:
+    description: "Path to mapfs binary"
+    default: /var/vcap/packages/mapfs/bin/mapfs
