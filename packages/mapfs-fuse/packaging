@@ -1,5 +1,6 @@
 #!/bin/bash
-set -e -x
+
+set -e
 
 cp -a ${BOSH_COMPILE_TARGET}/fuse/*.deb ${BOSH_INSTALL_TARGET}/
 cp -a ${BOSH_COMPILE_TARGET}/fuse/xenial/*.deb ${BOSH_INSTALL_TARGET}/
