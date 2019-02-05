@@ -17,7 +17,7 @@ elif [ "$codename" == "xenial" ]; then
   ) 200>/var/vcap/data/dpkg.lock
 fi
 
-modprobe fuse
+modprobe fuse || true
 groupadd fuse || true
 adduser vcap fuse
 chown root:fuse /dev/fuse
