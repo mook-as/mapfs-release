@@ -42,3 +42,6 @@
 	path = src/gopkg.in/yaml.v2
 	url = https://gopkg.in/yaml.v2
 	branch = v2
+[submodule "src/code.cloudfoundry.org/volumedriver"]
+	path = src/code.cloudfoundry.org/volumedriver
+	url = https://github.com/cloudfoundry/volumedriver.git

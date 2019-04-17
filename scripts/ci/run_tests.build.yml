@@ -1,7 +1,11 @@
 ---
 platform: linux
 
-rootfs_uri: docker:///cloudfoundry/diego-pipeline
+image_resource:
+  type: docker-image
+  source:
+    repository: cfpersi/mapfs-tests
+    tag: latest
 
 inputs:
   - name: mapfs-release
@@ -14,7 +18,6 @@ run:
     export GOPATH=$PWD/mapfs-release
     export GOBIN=$GOPATH/bin
     export PATH=$GOBIN:$PATH
-    go install github.com/onsi/ginkgo/ginkgo
 
     cd mapfs-release/src/code.cloudfoundry.org/mapfs
     ginkgo -r
