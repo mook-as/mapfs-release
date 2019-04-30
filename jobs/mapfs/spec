@@ -3,7 +3,6 @@ name: mapfs
 
 templates:
   install.erb: bin/pre-start
-  mapfs-init.erb: bin/mapfs-init
 
 packages:
 - mapfs
@@ -14,12 +13,8 @@ provides:
   type: mapfs
   properties:
   - path
-  - init-path
 
 properties:
   path:
     description: "Path to mapfs binary"
     default: /var/vcap/packages/mapfs/bin/mapfs
-  init-path:
-    description: "Path to mapfs-init script"
-    default: /var/vcap/jobs/mapfs/bin/mapfs-init
