@@ -1,0 +1,16 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    privileged: true
+    repository: bosh/main-bosh-docker
+    tag: latest
+
+inputs:
+  - name: mapfs-release-concourse-tasks
+  - name: mapfs-release
+
+run:
+  path: mapfs-release-concourse-tasks/scripts/ci/run_bosh_release_tests

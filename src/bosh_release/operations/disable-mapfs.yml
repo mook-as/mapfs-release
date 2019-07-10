@@ -1,0 +1,4 @@
+- path: /instance_groups/name=mapfs/jobs/name=mapfs/properties?
+  type: replace
+  value:
+    disable: true

@@ -15,6 +15,9 @@ provides:
   - path
 
 properties:
+  disable:
+    description: "Disable mapfs"
+    default: false
   path:
     description: "Path to mapfs binary"
     default: /var/vcap/packages/mapfs/bin/mapfs
