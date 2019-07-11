@@ -7,5 +7,3 @@ mkdir ../src && cp -a * ../src/ && mv ../src ./src
 mkdir $BOSH_INSTALL_TARGET/bin
 
 go build -o $BOSH_INSTALL_TARGET/bin/mapfs src/code.cloudfoundry.org/mapfs/*.go
-
-cp runtime.env ${BOSH_INSTALL_TARGET}/runtime.env

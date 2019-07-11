@@ -5,7 +5,6 @@ dependencies:
 - golang-1-linux
 
 files:
-  - runtime.env
   - code.cloudfoundry.org/goshims/syscallshim/*.go # gosub
   - code.cloudfoundry.org/mapfs/*.go # gosub
   - code.cloudfoundry.org/mapfs/mapfs/*.go # gosub

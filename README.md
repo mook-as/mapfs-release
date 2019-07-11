@@ -10,8 +10,4 @@ Collocate mapfs job onto diego cell via operations file
 [add-mapfs.yml](operations/add-mapfs.yml). See [BOSH operations
 file](https://bosh.io/docs/cli-ops-files/).
 
-`mapfs` executable will be available at the path in job scripts:
-
-```
-source /var/vcap/packages/mapfs/runtime.env
-```
+`mapfs` executable will be available at /var/vcap/packages/mapfs/bin/mapfs
