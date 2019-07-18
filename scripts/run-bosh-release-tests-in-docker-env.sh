@@ -24,4 +24,4 @@ docker \
 --env BOSH_CA_CERT=${BOSH_CA_CERT} \
 --env MAPFS_RELEASE_PATH=/mapfs-release \
 cfpersi/bosh-release-tests \
-ginkgo -v .
+ginkgo -nodes=1 -v .
