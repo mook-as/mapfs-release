@@ -32,9 +32,15 @@ install_if_missing ()
 
 codename=$(lsb_release -c | awk '{print $2}')
 if [ "$codename" == "trusty" ]; then
+    (
+    flock -x 200
     install_if_missing fuse /var/vcap/packages/mapfs-fuse/fuse_2.9.2-4ubuntu4.14.04.1_amd64.deb
+    ) 200>/var/vcap/data/dpkg.lock
 elif [ "$codename" == "xenial" ]; then
+    (
+    flock -x 200
     install_if_missing fuse /var/vcap/packages/mapfs-fuse/fuse_2.9.4-1ubuntu3.1_amd64.deb
+    ) 200>/var/vcap/data/dpkg.lock
 fi
 
 modprobe fuse || true
