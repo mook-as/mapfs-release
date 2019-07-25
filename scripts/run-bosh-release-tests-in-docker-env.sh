@@ -1,4 +1,9 @@
-#!/bin/bash -eux
+#!/bin/bash -ex
+
+COMMAND_TO_RUN='ginkgo -nodes 1 -v .'
+if [[ -n "$DEV" ]]; then
+    COMMAND_TO_RUN='bash'
+fi
 
 start-bosh
 
@@ -24,4 +29,4 @@ docker \
 --env BOSH_CA_CERT=${BOSH_CA_CERT} \
 --env MAPFS_RELEASE_PATH=/mapfs-release \
 cfpersi/bosh-release-tests \
-ginkgo -nodes=1 -v .
+$COMMAND_TO_RUN

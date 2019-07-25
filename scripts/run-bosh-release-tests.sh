@@ -8,6 +8,7 @@ docker run \
 -t \
 -i \
 --privileged \
+-e DEV=TRUE \
 -v /Users/pivotal/workspace/mapfs-release:/mapfs-release \
 --workdir=/ \
 bosh/main-bosh-docker \
