@@ -18,6 +18,8 @@ run:
     export GOPATH=$PWD/mapfs-release
     export GOBIN=$GOPATH/bin
     export PATH=$GOBIN:$PATH
+    export GO111MODULE=on
+    export GOFLAGS=-mod=vendor
 
-    cd mapfs-release/src/code.cloudfoundry.org/mapfs
+    cd mapfs-release/src/mapfs
     ginkgo -r
