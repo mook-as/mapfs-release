@@ -5,8 +5,8 @@ import (
 	"time"
 
 	"code.cloudfoundry.org/goshims/syscallshim/syscall_fake"
-	"mapfs/mapfs"
-	"mapfs/mapfs_fakes"
+	"code.cloudfoundry.org/mapfs/mapfs"
+	"code.cloudfoundry.org/mapfs/mapfs_fakes"
 	"github.com/hanwen/go-fuse/fuse"
 	"github.com/hanwen/go-fuse/fuse/pathfs"
 	. "github.com/onsi/ginkgo"
