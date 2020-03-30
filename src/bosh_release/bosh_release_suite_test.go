@@ -57,6 +57,20 @@ func deploy(opsfiles ...string) {
 	Eventually(session, 60*time.Minute).Should(gexec.Exit(0))
 }
 
+func undeploy() {
+	deleteDeployCmd := []string {"deld",
+		"-n",
+		"-d",
+		"bosh_release_test",
+	}
+
+
+	boshDeployCmd := exec.Command("bosh", deleteDeployCmd...)
+	session, err := gexec.Start(boshDeployCmd, GinkgoWriter, GinkgoWriter)
+	Expect(err).NotTo(HaveOccurred())
+	Eventually(session, 60*time.Minute).Should(gexec.Exit(0))
+}
+
 func hasStemcell() bool {
 	boshStemcellsCmd := exec.Command("bosh", "stemcells", "--json")
 	stemcellOutput := gbytes.NewBuffer()
