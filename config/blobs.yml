@@ -1,7 +1,3 @@
-fuse/fuse_2.9.2-4ubuntu4.14.04.1_amd64.deb:
-  size: 25106
-  object_id: e305d96a-3df0-4b5e-4dce-0ebc43561e00
-  sha: d7dde526bc751b118fe296fd8e3d6a7e71251c3c
 fuse/xenial/fuse_2.9.7-1+deb9u2_amd64.deb:
   size: 71458
   object_id: 40c3d3f0-124e-4d63-66c6-2dc8b6c5875a
