@@ -52,9 +52,12 @@ user_allow_other
 EOF
 chmod 644 /etc/fuse.conf
 
+<% end %>
+
 echo "Installing mapfs"
 
 chown root:vcap /var/vcap/packages/mapfs/bin/mapfs
 chmod 750 /var/vcap/packages/mapfs/bin/mapfs
 chmod u+s /var/vcap/packages/mapfs/bin/mapfs
-<% end %>
+
+cp /var/vcap/packages/mapfs/bin/mapfs /var/vcap/jobs/mapfs/bin/mapfs

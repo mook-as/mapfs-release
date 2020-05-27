@@ -21,4 +21,4 @@ properties:
     default: false
   path:
     description: "Path to mapfs binary"
-    default: /var/vcap/packages/mapfs/bin/mapfs
+    default: /var/vcap/jobs/mapfs/bin/mapfs
