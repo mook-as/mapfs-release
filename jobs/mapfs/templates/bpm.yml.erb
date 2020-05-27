@@ -1,0 +1,12 @@
+processes:
+  - name: mapfs
+    executable: /bin/sh
+    args:
+    - -c
+    - >
+      echo "Sleeping forever; mapfs only runs as pre-start" ;
+      while true ; do
+      sleep 365d ;
+      done
+hooks:
+  pre_start: /var/vcap/jobs/mapfs/bin/pre-start

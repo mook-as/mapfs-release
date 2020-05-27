@@ -3,6 +3,7 @@ name: mapfs
 
 templates:
   install.erb: bin/pre-start
+  bpm.yml.erb: config/bpm.yml
 
 packages:
 - mapfs
